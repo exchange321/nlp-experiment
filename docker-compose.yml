@@ -1,0 +1,19 @@
+version: '2'
+services:
+  base:
+    build: .
+  local:
+    extends: base
+    build:
+      args:
+        BUILD_ENV: development
+    command: ./.docker/scripts/entrypoint.sh
+    networks:
+      gateway:
+        aliases:
+          - nlp-experiment
+    volumes:
+      - .:/var/task
+networks:
+  gateway:
+    external: true

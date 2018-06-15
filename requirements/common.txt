@@ -1,0 +1,8 @@
+psycopg2-binary==2.7.4
+python-dotenv==0.8.2
+numpy==1.14.3
+requests==2.18.4
+nltk==3.3
+python-rake==1.4.4
+autocorrect==0.3.0
+gensim==3.4.0
